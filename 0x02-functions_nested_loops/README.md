@@ -35,7 +35,7 @@
 | `104-fibonacci.c` | Finds and prints the first 98 Fibonacci numbers |
 
 
-======================================
+
 
 _putchar.c CODE
 
@@ -55,7 +55,7 @@ _putchar.c CODE
 	}
 
 
-=====================================
+
 
 main.h CODE
 
@@ -75,7 +75,7 @@ main.h CODE
 	void jack_bauer(void);
 	void times_table(void);
 	int add(int, int);
-	void print_to_98(int n);
+	void rint_to_98(int n);
 	void print_times_table(int n);
 
 
