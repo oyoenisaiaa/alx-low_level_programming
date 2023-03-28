@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _puts -  prints a string in reverse, followed by a new line
- * @str: the string to print
+ * print_rev -  prints a string in reverse, followed by a new line
+ * @s: the string to print
  */
 
-void _puts(char *str)
+void print_rev(char *s)
 {
 	int a, b;
 
