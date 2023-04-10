@@ -13,8 +13,7 @@
 
 int main(int argc, char *argv[])
 {
-	for (argc = 1; argc > 1; argc++)
-		(void)argv;
-	printf("argc = %d\n", argc - 1);
+	(void)argv;
+	printf("argc = %d\n", argc);
 	return (0);
 }
