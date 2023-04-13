@@ -33,41 +33,41 @@ void ch_free_grid(char **grid, unsigned int height)
 
 char **strtow(char *str)
 {
-	char **split;
-	unsigned int c, height, i, j, k;
+	char **aout;
+	unsigned int c, height, i, j, a1;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
 	for (c = height = 0; str[c] != '\0'; c++)
 		if (str[c] != ' ' && (str[c + 1] == ' ' || str[c + 1] == '\0'))
 			height++;
-	split = malloc((height + 1) * sizeof(char *));
-	if (split == NULL || height == 0)
+	aout = malloc((height + 1) * sizeof(char *));
+	if (aout == NULL || height == 0)
 	{
-		free(split);
+		free(aout);
 		return (NULL);
 	}
-	for (i = k = 0; i < height; i++)
+	for (i = a1 = 0; i < height; i++)
 	{
-		for (c = k; str[c] != '\0'; c++)
+		for (c = a1; str[c] != '\0'; c++)
 		{
 			if (str[c] == ' ')
-				k++;
+				a1++;
 			if (str[c] != ' ' && (str[c + 1] == ' ' || str[c + 1] == '\0'))
 			{
-				split[i] = malloc((c - k + 2) * sizeof(char));
-				if (split[i] == NULL)
+				aout[i] = malloc((c - a1 + 2) * sizeof(char));
+				if (aout[i] == NULL)
 				{
-					ch_free_grid(split, i);
+					ch_free_grid(aout, i);
 					return (NULL);
 				}
 				break;
 			}
 		}
-		for (j = 0; split <= c; k++, j++)
-			split[i][j] = str[a1];
-		split[i][j] = '\0';
+		for (j = 0; a1 <= c; a1++, j++)
+			aout[i][j] = str[a1];
+		aout[i][j] = '\0';
 	}
-	split[i] = NULL;
-	return (split);
+	aout[i] = NULL;
+	return (aout);
 }
