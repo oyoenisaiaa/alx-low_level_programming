@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 
- /**
- * _print - a function that moves a string one place to the left
- * and prints the string
- * @str: the string to move
- * @l: the size of string
+/**
+ * _print - moves a string one place to the left and prints the string
+ * @str: string to move
+ * @l: size of string
+ *
  * Return: void
  */
 
