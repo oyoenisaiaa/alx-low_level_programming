@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
  /**
- * _print - moves a string one place to the left
+ * _print - a function that moves a string one place to the left
  * and prints the string
  * @str: the string to move
  * @l: the size of string
