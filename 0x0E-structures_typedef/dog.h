@@ -16,7 +16,8 @@ float age;
 };
 
 /**
- * dog_t - initializes a variable of type struct dog
+ * dog_t - a new type dog_t to replace struct
+ * defining a new type dog_t as a new name for the type struct dog
  */
 
 typedef struct dog dog_t;
