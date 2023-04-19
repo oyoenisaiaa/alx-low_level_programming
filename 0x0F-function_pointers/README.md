@@ -57,6 +57,7 @@ This task requires that you create four different files.
 
 3-calc.h
 This file should contain all the function prototypes and data structures used by the program. You can use this structure:
+
 3-op_functions.c
 This file should contain the 5 following functions (not more):
 
@@ -65,6 +66,7 @@ op_sub: returns the difference of a and b. Prototype: int op_sub(int a, int b);
 op_mul: returns the product of a and b. Prototype: int op_mul(int a, int b);
 op_div: returns the result of the division of a by b. Prototype: int op_div(int a, int b);
 op_mod: returns the remainder of the division of a by b. Prototype: int op_mod(int a, int b);
+
 3-get_op_func.c
 This file should contain the function that selects the correct function to perform the operation asked by the user. You’re not allowed to declare any other function.
 
@@ -79,6 +81,7 @@ You are not allowed to use more than one if statement in your code
 You are not allowed to use more than one while loop in your code
 If s does not match any of the 5 expected operators (+, -, *, /, %), return NULL
 You are only allowed to declare these two variables in this function:
+
 3-main.c
 This file should contain your main function only.
 
@@ -87,6 +90,7 @@ You are not allowed to directly call op_add, op_sub, op_mul, op_div or op_mod fr
 You have to use atoi to convert arguments to int
 You are not allowed to use any kind of loop -
 You are allowed to use a maximum of 3 if statements
+
 4. Most hackers are young because young people tend to be adaptable. As long as you remain adaptable, you can always be a good hacker
 Write a program that prints the opcodes of its own main function.
 
