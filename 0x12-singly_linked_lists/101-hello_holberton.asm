@@ -1,9 +1,9 @@
+section .data
+msg: db "Hello, Holberton", 0
+fmt: db "%s", 10, 0
+
 global main
 extern printf
-
-section .data
-    hello db "Hello, Holberton", 0
-    fmt db "%s\n", 0
 
 section .text
 main:
@@ -11,8 +11,8 @@ main:
     mov rbp, rsp
 
     mov rdi, fmt
-    mov rsi, hello
-    mov eax, 0
+    mov rsi, msg
+    xor eax, 0
     call printf
 
     mov rsp, rbp
